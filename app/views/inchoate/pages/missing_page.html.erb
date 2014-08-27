@@ -1,0 +1,5 @@
+<h1>Whoops!</h1>
+
+<p>Unable to find a page template at <strong><%= request.path %></strong>.</p>
+
+<%= link_to "Create the missing page", inchoate.pages_path(path: request.path), method: :post %>
