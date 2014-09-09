@@ -2,6 +2,7 @@ require 'fileutils'
 
 module Inchoate
   class PagesController < ApplicationController
+    helper Inchoate::ApplicationHelper
 
     def show
       Inchoate::Renderer.new(:context => self).render
